@@ -1,0 +1,203 @@
+/* Basic styling */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    color: #222;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    color: #0084bf;
+    text-decoration: none;
+ }
+
+ a:visited {
+    color: #827be9;
+}
+
+button{
+    border: 0;
+    font-size: 0.85rem;
+    padding: 2px 8px;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    border: 0.1rem solid #0073b1;
+    color: #0073b1;
+ }
+
+h2{
+font-size: 1.6rem;
+}
+
+p{
+    font-size: 0.95rem;
+}
+
+span{
+    background-color: #0073b1;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.5px;
+    height: 20px;
+    overflow: hidden;
+    width: 24px;
+}
+
+img{
+    width: 100%;
+    height: 500px;
+    opacity: 1.4; 
+    filter: brightness(30%);
+    -moz-filter: brightness(30%);
+    -webkit-filter: brightness(30%); 
+}
+
+/* End of basic styling */
+
+/* topnav styling */
+
+.topnav{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    border-bottom: 2px solid #0073b1;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     background-color: #fff;
+     z-index: 1; 
+   }
+
+.topnav .top-btn{
+    flex: 1;
+    text-align: right;
+    padding-right:30px;
+}
+
+.topnav .top-btn button{
+    padding: 5px 14px;
+}
+
+.topnav .top-btn button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #0073b1;
+    transition: all ease-out 0.3s;
+}
+
+.topnav p{
+    padding-left:6px;
+    font-size: 1.2rem;
+}
+
+.top-content{
+    /* clip-path: polygon(0 0%, 100% 0%, 100% 98%, 50% 100%, 0 98%); */
+    background-image: url(../image/img.jpg);
+    background-position: center;
+    margin-top: 60px !important;
+    padding: 70px !important;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #000;
+    background-size: cover;
+  }
+
+
+.top-content-details{
+    text-align: left;
+      color: #fff;
+    z-index: 11000;
+}
+
+.top-content-details h2:nth-child(3){
+padding-bottom: 20px; 
+}
+
+.top-content-details .para{
+    font-weight: bold;
+line-height: 1.3;
+}
+
+/* End of topnav styling */
+
+/* Body Content styling */
+
+.body-content-top{
+    display: flex;
+    justify-content: center;
+    padding: 25px 10px;
+}
+
+.body-content{
+    display: flex;
+    justify-content: center;
+    padding: 10px 25px;
+}
+
+.body-content .right-content{
+    flex: 1;
+    background-color: #efefff;
+    padding: 30px 30px;
+}
+
+.body-content .right-content .reg, .reg-btn{
+padding-bottom: 20px;
+}
+
+.body-content .right-content .reg-btn button{
+    background-color: #0073b1;
+    color: #fff;
+    padding: 6px 12px;
+    border: 1px solid blue;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    }
+    .body-content .right-content .reg-btn button:hover{
+    filter: brightness(80%);
+    -moz-filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    transition: all 0.5s ease-in-out;
+    }
+
+.body-content .right-content .reg p{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.body-content .left-content{
+    flex: 1;
+}
+
+.body-content .left-content p{
+    line-height: 1.3;
+    padding-bottom: 15px;
+}
+
+.register{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register p{
+   font-size: 1rem;
+   font-weight: bold;
+   line-height: 1.4;
+}
+
+ .footer{
+     text-align: center;
+     margin: 15px 0;
+ }
+
+ .footer p{
+    font-size: 1.2rem;
+ }
